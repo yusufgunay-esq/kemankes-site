@@ -21,30 +21,51 @@
 <body>
 <main>
   <h1>Gizlilik Politikası</h1>
-  <p class="tarih">Kemankeş · Son güncelleme: 9 Kasım 2026</p>
+  <p class="tarih">Kemankeş · Son güncelleme: 13 Kasım 2026</p>
 
-  <p>Kemankeş, Yusuf Günay (Gunay Studios) tarafından geliştirilen bir okçuluk skor defteri ve antrenman günlüğü uygulamasıdır. Bu politika, uygulamanın hangi verileri işlediğini açıklar.</p>
-
-  <h2>Toplanan veriler</h2>
-  <p>Kemankeş hiçbir kişisel veriyi toplamaz, sunucuya göndermez ve üçüncü taraflarla paylaşmaz. Sürüm 1.0'da hesap oluşturma yoktur; uygulama internet bağlantısı olmadan çalışır.</p>
+  <p>Kemankeş, Yusuf Günay (Gunay Studios) tarafından geliştirilen yerel öncelikli bir okçuluk skor defteri ve antrenman günlüğü uygulamasıdır. Bu politika, uygulamanın hangi verileri işlediğini ve isteğe bağlı antrenör eşitlemesinde nelerin buluta aktarıldığını açıklar.</p>
 
   <h2>Cihazda saklanan veriler</h2>
-  <p>Seanslar, atışlar, ekipman kayıtları ve ayarlar yalnızca cihazın kendi depolamasında (IndexedDB) tutulur. Bu veriler siz silene kadar cihazda kalır. Uygulama içinden dışa aktarma yaptığınız dosyalar sizin kontrolünüzdedir; nereye kaydedileceğine siz karar verirsiniz.</p>
+  <p>Seanslar, seriler, atışlar, ekipman kayıtları, profil bilgileri ve ayarlar öncelikle cihazın kendi depolamasında (IndexedDB) tutulur. Uygulama hesap açmadan ve internet olmadan çalışır; bu veriler siz silene kadar cihazda kalır. Uygulama içinden dışa aktardığınız dosyalar sizin kontrolünüzdedir.</p>
 
-  <h2>İzinler</h2>
+  <h2>İsteğe bağlı antrenör eşitlemesi</h2>
+  <p>Bulut yalnızca bir antrenöre bağlanmayı seçtiğinizde kullanılır ve her zaman isteğe bağlıdır. Hesap açma yalnızca antrenörler için vardır: antrenörler e-posta ve şifreyle hesap açar. Sporcular hesap açmaz; cihazda anonim bir kimlik oluşturulur.</p>
+  <p>Bir antrenöre bağlandığınızda şu veriler Supabase üzerinde saklanır:</p>
   <ul>
-    <li><strong>Titreşim:</strong> Atış geri bildirimi için kullanılır; veri toplamaz.</li>
+    <li>Sporcu profili: ad, kulüp, şehir, ana yay.</li>
+    <li>Seans, seri ve ok kayıtları; bunlara bağlı değerlendirmeler ve notlar.</li>
+    <li>Antrenörün yazdığı notlar ve bağlantı durumu.</li>
   </ul>
-  <p>Uygulama kamera, konum, kişiler veya mikrofon erişimi istemez.</p>
+  <p>Sporcu verisini yalnızca bağlı olduğu antrenör görebilir. Antrenörün yazdığı notlar sporcuya uygulama içinde görünür. Antrenör hesabı için ad, e-posta, kulüp, şehir ve bağlantı kodu da bulutta tutulur.</p>
+
+  <h2>Bulut sağlayıcısı ve işleyici</h2>
+  <p>Bulut altyapısı Supabase'dir ve veriler AB sınırları içinde (Frankfurt bölgesi) saklanır. Supabase, verileri yalnızca uygulamanın çalışması için işleyen veri işleyicidir. Veriler aktarım sırasında TLS ile şifrelenir. Veriler reklam, profilleme veya pazarlama amacıyla kullanılmaz; satılmaz ve üçüncü taraflarla paylaşılmaz.</p>
 
   <h2>Reklam ve analiz</h2>
   <p>Uygulamada reklam, reklam kimliği (AAID), analiz veya çökme raporlama aracı bulunmaz.</p>
+
+  <h2>Saklama süresi</h2>
+  <p>Veriler, siz silene kadar saklanır. Otomatik süre aşımıyla silme yapılmaz. Silme yolları aşağıdadır.</p>
+
+  <h2>Verilerinizi silme</h2>
+  <ul>
+    <li><strong>Antrenör hesabı:</strong> Ayarlar &gt; Antrenör paneli &gt; <em>Hesabımı sil</em>. Antrenör hesabı, profil satırı, bağlantı kodu, bağlantılar ve yazdığı notlar silinir; ardından oturum kapanır. Sporcuların kendi seansları silinmez.</li>
+    <li><strong>Sporcu verisi:</strong> Ayarlar &gt; Veri &gt; <em>Tüm verilerimi sil</em>. Cihazdaki seanslar, oklar, ekipman, profil ve ayarlar silinir; bağlı bir bulut oturumu varsa bulut kopyası da silinir. İnternet yoksa silme isteği kuyruğa alınır ve bağlantı kurulunca tamamlanır.</li>
+  </ul>
+  <p>Uygulamaya erişemiyorsanız silme talebinizi <a href="mailto:yusuf@gunaystudio.com">yusuf@gunaystudio.com</a> adresine iletebilirsiniz. Ayrıntılar: <a href="hesap-silme.html">Hesap ve Veri Silme</a>.</p>
+
+  <h2>İzinler</h2>
+  <ul>
+    <li><strong>İnternet:</strong> Yalnızca isteğe bağlı antrenör eşitlemesi için kullanılır.</li>
+    <li><strong>Titreşim:</strong> Atış geri bildirimi için kullanılır; veri toplamaz.</li>
+  </ul>
+  <p>Uygulama kamera, konum, kişiler veya mikrofon erişimi istemez.</p>
 
   <h2>Çocuklar</h2>
   <p>Uygulama 18 yaş ve üstü kullanıcılara yöneliktir ve çocuklardan bilerek veri toplamaz.</p>
 
   <h2>Değişiklikler</h2>
-  <p>İleride isteğe bağlı hesap veya antrenör eşitlemesi eklenirse, bu politika ve Google Play Veri Güvenliği beyanı yayından önce güncellenir; eşitleme her zaman isteğe bağlı kalır.</p>
+  <p>Politika veya veri akışı değişirse bu sayfa ve Google Play Veri Güvenliği beyanı yayından önce güncellenir. Eşitleme her zaman isteğe bağlı kalır.</p>
 
   <h2>İletişim</h2>
   <p>Sorular: <a href="mailto:yusuf@gunaystudio.com">yusuf@gunaystudio.com</a></p>
@@ -53,13 +74,54 @@
 
   <div class="ing" lang="en">
     <h2>Privacy Policy (English)</h2>
-    <p class="tarih">Last updated: 9 November 2026</p>
-    <p>Kemankeş is an archery scorebook and training log by Yusuf Günay (Gunay Studios). It collects no personal data, sends nothing to a server, and shares nothing with third parties. Version 1.0 has no account; the app works offline.</p>
-    <p>Sessions, shots, equipment records and settings are stored only on your device (IndexedDB) until you delete them. Files you export are under your control.</p>
-    <p><strong>Permissions:</strong> vibration, used only for shot feedback. The app does not request camera, location, contacts or microphone access.</p>
-    <p>No ads, no advertising ID, no analytics and no crash reporting. The app targets users aged 18+ and does not knowingly collect data from children.</p>
-    <p>If optional accounts or coach sync are added later, this policy and the Play Data Safety declaration will be updated before release; sync will always be optional.</p>
-    <p>Contact: <a href="mailto:yusuf@gunaystudio.com">yusuf@gunaystudio.com</a></p>
+    <p class="tarih">Kemankeş · Last updated: 13 November 2026</p>
+
+    <p>Kemankeş is a local-first archery scorebook and training log by Yusuf Günay (Gunay Studios). This policy explains what data the app processes and what is transferred to the cloud when optional coach sync is used.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>Sessions, ends, shots, equipment records, profile details and settings are stored primarily on your device (IndexedDB). The app works without an account and without internet; this data stays on the device until you delete it. Files you export are under your control.</p>
+
+    <h2>Optional coach sync</h2>
+    <p>The cloud is used only if you choose to connect to a coach, and it is always optional. Only coaches can create accounts, using email and password. Athletes do not create accounts; the device generates an anonymous identity.</p>
+    <p>When you connect to a coach, the following is stored in Supabase:</p>
+    <ul>
+      <li>Athlete profile: name, club, city, primary bow.</li>
+      <li>Session, end and arrow records, together with their evaluations and notes.</li>
+      <li>Notes written by the coach and connection status.</li>
+    </ul>
+    <p>An athlete's data is visible only to the coach they are connected to. Coach notes are visible to the athlete in the app. The coach account's name, email, club, city and connect code are also stored in the cloud.</p>
+
+    <h2>Cloud provider and processor</h2>
+    <p>Cloud infrastructure is Supabase, with data stored in the EU (Frankfurt region). Supabase acts as a data processor and handles the data only to run the app. Data is encrypted in transit with TLS. Data is not used for advertising, profiling or marketing, and is not sold or shared with third parties.</p>
+
+    <h2>Ads and analytics</h2>
+    <p>The app contains no ads, no advertising ID (AAID), no analytics and no crash reporting.</p>
+
+    <h2>Retention</h2>
+    <p>Data is kept until you delete it. There is no automatic expiry. Deletion paths are below.</p>
+
+    <h2>Deleting your data</h2>
+    <ul>
+      <li><strong>Coach account:</strong> Settings &gt; Coach panel &gt; <em>Delete my account</em>. The coach account, profile row, connect code, connections and notes are deleted, then the session ends. Athletes' own sessions are not deleted.</li>
+      <li><strong>Athlete data:</strong> Settings &gt; Data &gt; <em>Delete all my data</em>. Sessions, arrows, equipment, profile and settings on the device are deleted; if a cloud session exists, the cloud copy is deleted too. If offline, the request is queued and completes when connectivity returns.</li>
+    </ul>
+    <p>If you cannot access the app, send your deletion request to <a href="mailto:yusuf@gunaystudio.com">yusuf@gunaystudio.com</a>. Details: <a href="hesap-silme.html">Account and Data Deletion</a>.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Internet:</strong> used only for optional coach sync.</li>
+      <li><strong>Vibration:</strong> used for shot feedback; it collects no data.</li>
+    </ul>
+    <p>The app does not request camera, location, contacts or microphone access.</p>
+
+    <h2>Children</h2>
+    <p>The app targets users aged 18 and over and does not knowingly collect data from children.</p>
+
+    <h2>Changes</h2>
+    <p>If the policy or data flows change, this page and the Google Play Data Safety declaration will be updated before release. Sync will always remain optional.</p>
+
+    <h2>Contact</h2>
+    <p>Questions: <a href="mailto:yusuf@gunaystudio.com">yusuf@gunaystudio.com</a></p>
   </div>
 
   <p style="margin-top:40px;font-size:14px;opacity:.7">© 2026 Yusuf Günay · Gunay Studios</p>
